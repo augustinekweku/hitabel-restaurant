@@ -4,36 +4,48 @@ import React from "react";
 const Navbar = () => {
   return (
     <div className="">
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0 ">
-        <a href="" className="navbar-brand p-0">
-          <h1 className="text-primary m-0">
+      <nav className=" navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-5  ">
+        <div className="d-flex justify-content-between w-100 container my-4">
+          <a href="" className="navbar-brand p-0">
+            {/* <h1 className="text-primary m-0">
             <i className="fa fa-utensils me-3"></i>Hitabel
-          </h1>
-          {/* <!-- <img src="assets/img/logo.png" alt="Logo"> --> */}
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
+          </h1> */}
+            <img
+              src="assets/img/hitabel-logo.png"
+              style={{
+                width: "150px",
+                height: "100px",
+                objectFit: "cover",
+                overflow: "visible",
+              }}
+              alt="Logo"
+            />
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span className="fa fa-bars"></span>
+          </button>
+        </div>
+        <div
+          className="collapse navbar-collapse mt-5 mt-lg-0"
+          id="navbarCollapse"
         >
-          <span className="fa fa-bars"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav ms-auto py-0 pe-4">
             <Link href="/" className="nav-item nav-link active">
               Home
             </Link>
-            <Link href="#" className="nav-item nav-link">
+            <Link href="#about" className="nav-item nav-link">
               About
             </Link>
-            <Link href="#" className="nav-item nav-link">
-              Service
-            </Link>
-            <Link href="#" className="nav-item nav-link">
+
+            <Link href="#menu" className="nav-item nav-link">
               Menu
             </Link>
-            <div className="nav-item dropdown">
+            <div className="nav-item dropdown d-none">
               <Link
                 href="#"
                 className="nav-link dropdown-toggle"
@@ -53,11 +65,11 @@ const Navbar = () => {
                 </Link>
               </div>
             </div>
-            <Link href="#" className="nav-item nav-link">
-              Contact
-            </Link>
           </div>
-          <Link href="#" className="btn btn-primary py-2 px-4">
+          <Link
+            href="#reservation"
+            className="btn btn-primary py-2 px-4 text-nowrap"
+          >
             Book A Table
           </Link>
         </div>
