@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className="">
       <nav className=" navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-5  ">
         <div className="d-flex justify-content-between w-100 container my-4">
-          <a href="" className="navbar-brand p-0">
+          <Link href="/" className="navbar-brand p-0">
             {/* <h1 className="text-primary m-0">
             <i className="fa fa-utensils me-3"></i>Hitabel
           </h1> */}
@@ -20,7 +20,7 @@ const Navbar = () => {
               }}
               alt="Logo"
             />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"

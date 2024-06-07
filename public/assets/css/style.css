@@ -211,6 +211,8 @@
 .service-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
     transition: .5s;
+    border-radius: 9px !important;
+    height: 100%;
 }
 
 .service-item:hover {

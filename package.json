@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "jquery": "^3.7.1",
+    "lightgallery": "^2.7.2",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-simple-image-viewer": "^1.2.2",
     "sass": "^1.77.4"
   },
   "devDependencies": {

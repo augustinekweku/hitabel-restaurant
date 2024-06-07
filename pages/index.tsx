@@ -1,10 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
-import Navbar from "@/components/Navbar";
 import Reservation from "@/components/Reservation";
 import Footer from "@/components/Footer";
 import FoodMenu from "@/components/FoodMenu";
+import AboutUsImageGallery from "@/components/AboutUsImageGallery";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -53,7 +52,7 @@ export default function Home() {
                       de-stress Accra and beyond.
                     </p>
                     <a
-                      href=""
+                      href="#reservation"
                       className="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft"
                     >
                       Book A Table
@@ -76,62 +75,84 @@ export default function Home() {
           <div className="container-xxl py-5">
             <div className="container">
               <div className="row g-4">
-                <div
-                  className="col-lg-3 col-sm-6 wow fadeInUp"
-                  data-wow-delay="0.1s"
-                >
-                  <div className="service-item rounded pt-3">
+                <div className=" col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                  <div className="service-item  pt-3">
                     <div className="p-4">
                       <i className="fa fa-3x fa-user-tie text-primary mb-4"></i>
                       <h5>Master Chefs</h5>
                       <p>
-                        Diam elitr kasd sed at elitr sed ipsum justo dolor sed
-                        clita amet diam
+                        Our restaurant is proud to feature a team of master
+                        chefs who bring their extensive culinary expertise and
+                        creativity to every dish. Each chef has years of
+                        experience and a passion for food that shines through in
+                        their innovative cooking techniques and presentation.
+                        They continuously refine their skills and stay updated
+                        with the latest trends in the culinary world, ensuring
+                        that every meal served is a masterpiece. Our chefs&apos;
+                        dedication to excellence and their commitment to using
+                        the finest ingredients guarantee an unforgettable dining
+                        experience for our guests.
                       </p>
                     </div>
                   </div>
                 </div>
-                <div
-                  className="col-lg-3 col-sm-6 wow fadeInUp"
-                  data-wow-delay="0.3s"
-                >
-                  <div className="service-item rounded pt-3">
+                <div className=" col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                  <div className="service-item  pt-3">
                     <div className="p-4">
                       <i className="fa fa-3x fa-utensils text-primary mb-4"></i>
                       <h5>Quality Food</h5>
                       <p>
-                        Diam elitr kasd sed at elitr sed ipsum justo dolor sed
-                        clita amet diam
+                        At our restaurant, quality is not just a promise;
+                        it&apos;s a standard. We source the freshest ingredients
+                        from trusted local farmers and suppliers to ensure that
+                        every dish is made with the highest quality produce. Our
+                        commitment to quality extends to every aspect of our
+                        food, from the meticulous preparation to the final
+                        presentation. We believe that great food starts with
+                        great ingredients, and our team takes the time to select
+                        and use only the best. Each bite is a testament to our
+                        dedication to providing our guests with exceptional
+                        flavors and a dining experience that exceeds
+                        expectations.
                       </p>
                     </div>
                   </div>
                 </div>
-                <div
-                  className="col-lg-3 col-sm-6 wow fadeInUp"
-                  data-wow-delay="0.5s"
-                >
-                  <div className="service-item rounded pt-3">
+                <div className=" col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                  <div className="service-item  pt-3">
                     <div className="p-4">
-                      <i className="fa fa-3x fa-cart-plus text-primary mb-4"></i>
-                      <h5>Online Order</h5>
+                      <i className="fa fa-3x fa-star text-primary mb-4"></i>
+                      <h5>Inviting Ambiance</h5>
                       <p>
-                        Diam elitr kasd sed at elitr sed ipsum justo dolor sed
-                        clita amet diam
+                        We believe that the dining experience goes beyond just
+                        the food on your plate. Our restaurant offers an
+                        inviting ambiance that enhances your overall experience.
+                        From the elegant décor to the comfortable seating and
+                        warm lighting, every detail is designed to create a
+                        relaxing and enjoyable atmosphere. Whether you&apos;re
+                        here for a romantic dinner, a family celebration, or a
+                        business meeting, our ambiance sets the perfect stage
+                        for any occasion.
                       </p>
                     </div>
                   </div>
                 </div>
-                <div
-                  className="col-lg-3 col-sm-6 wow fadeInUp"
-                  data-wow-delay="0.7s"
-                >
-                  <div className="service-item rounded pt-3">
+                <div className=" col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                  <div className="service-item  pt-3">
                     <div className="p-4">
                       <i className="fa fa-3x fa-headset text-primary mb-4"></i>
-                      <h5>24/7 Service</h5>
+                      <h5>Exceptional Service</h5>
                       <p>
-                        Diam elitr kasd sed at elitr sed ipsum justo dolor sed
-                        clita amet diam
+                        At our restaurant, exceptional service is at the heart
+                        of what we do. Our friendly and attentive staff are
+                        dedicated to making your visit memorable. From the
+                        moment you walk in, you&apos;ll be greeted with a smile
+                        and treated with the utmost care. Our team is trained to
+                        anticipate your needs and provide personalized service,
+                        ensuring that every aspect of your dining experience is
+                        seamless and enjoyable. We take pride in going above and
+                        beyond to make sure you feel valued and appreciated as
+                        our guest.
                       </p>
                     </div>
                   </div>
@@ -147,37 +168,7 @@ export default function Home() {
               <div className="container">
                 <div className="row g-5 align-items-center">
                   <div className="col-lg-6">
-                    <div className="row g-3">
-                      <div className="col-6 text-start">
-                        <img
-                          className="img-fluid rounded w-100 wow zoomIn"
-                          data-wow-delay="0.1s"
-                          src="assets/img/about-1.jpg"
-                        />
-                      </div>
-                      <div className="col-6 text-start">
-                        <img
-                          className="img-fluid rounded w-75 wow zoomIn"
-                          data-wow-delay="0.3s"
-                          src="assets/img/about-2.jpg"
-                          style={{ marginTop: "25%" }}
-                        />
-                      </div>
-                      <div className="col-6 text-end">
-                        <img
-                          className="img-fluid rounded w-75 wow zoomIn"
-                          data-wow-delay="0.5s"
-                          src="assets/img/about-3.jpg"
-                        />
-                      </div>
-                      <div className="col-6 text-end">
-                        <img
-                          className="img-fluid rounded w-100 wow zoomIn"
-                          data-wow-delay="0.7s"
-                          src="assets/img/about-4.jpg"
-                        />
-                      </div>
-                    </div>
+                    <AboutUsImageGallery />
                   </div>
                   <div className="col-lg-6">
                     <h5 className="section-title ff-secondary text-start text-primary fw-normal">
@@ -189,15 +180,21 @@ export default function Home() {
                       Hi-Tabel
                     </h1>
                     <p className="mb-4">
-                      Tempor erat elitr rebum at clita. Diam dolor diam ipsum
-                      sit. Aliqu diam amet diam et eos erat ipsum et lorem et
-                      sit, sed stet lorem sit.
+                      Welcome to our customer-focused Restaurant, Bar & Pizza, a
+                      haven designed to de-stress Accra and beyond. Our
+                      establishment is dedicated to providing a relaxing and
+                      enjoyable escape from the hustle and bustle of everyday
+                      life. With a team of master chefs crafting exquisite
+                      dishes, a bar offering a wide selection of refreshing
+                      beverages, and a pizza menu that tantalizes the taste
+                      buds, we cater to every craving.
                     </p>
                     <p className="mb-4">
-                      Tempor erat elitr rebum at clita. Diam dolor diam ipsum
-                      sit. Aliqu diam amet diam et eos. Clita erat ipsum et
-                      lorem et sit, sed stet lorem sit clita duo justo magna
-                      dolore erat amet
+                      Our inviting ambiance and exceptional service ensure that
+                      every visit is a memorable experience, whether you&apos;re
+                      here for a casual meal, a special celebration, or simply
+                      to unwind with friends. Join us and discover the perfect
+                      place to relax and savor the moment.
                     </p>
                     <div className="row g-4 mb-4">
                       <div className="col-sm-6">
@@ -206,7 +203,7 @@ export default function Home() {
                             className="flex-shrink-0 display-5 text-primary mb-0"
                             data-toggle="counter-up"
                           >
-                            15
+                            5
                           </h1>
                           <div className="ps-4">
                             <p className="mb-0">Years of</p>
@@ -220,7 +217,7 @@ export default function Home() {
                             className="flex-shrink-0 display-5 text-primary mb-0"
                             data-toggle="counter-up"
                           >
-                            50
+                            4
                           </h1>
                           <div className="ps-4">
                             <p className="mb-0">Popular</p>
