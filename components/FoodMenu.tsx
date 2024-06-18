@@ -56,7 +56,7 @@ const FoodMenu = () => {
               </a>
             </li>
           </ul>
-          <div className="tab-content">
+          <div className="tab-content d-none">
             <div id="tab-1" className="tab-pane fade show p-0 active">
               <div className="row g-4">
                 {BREAKFAST_MENU.map((item) => (
