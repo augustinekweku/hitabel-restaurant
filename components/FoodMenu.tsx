@@ -1,4 +1,9 @@
-import { BREAKFAST_MENU, DINNER_MENU, LUNCH_MENU } from "@/constants";
+import {
+  BREAKFAST_MENU,
+  DINNER_MENU,
+  GENERAL_MENU,
+  LUNCH_MENU,
+} from "@/constants";
 import React from "react";
 
 const FoodMenu = () => {
@@ -15,7 +20,7 @@ const FoodMenu = () => {
           className="tab-className text-center wow fadeInUp"
           data-wow-delay="0.1s"
         >
-          <ul className="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+          <ul className="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5 d-none">
             <li className="nav-item">
               <a
                 className="d-flex align-items-center text-start mx-3 ms-0 pb-3 active"
@@ -56,24 +61,28 @@ const FoodMenu = () => {
               </a>
             </li>
           </ul>
-          <div className="tab-content d-none">
+          <div className="tab-content">
             <div id="tab-1" className="tab-pane fade show p-0 active">
               <div className="row g-4">
-                {BREAKFAST_MENU.map((item) => (
+                {GENERAL_MENU.map((item) => (
                   <div className="col-lg-6" key={item.image}>
                     <div className="d-flex align-items-center">
                       <img
                         className="flex-shrink-0 img-fluid rounded"
-                        src="assets/img/menu-1.jpg"
+                        src={item.image}
                         alt=""
-                        style={{ width: "80px" }}
+                        style={{
+                          width: "80px",
+                          height: "80px",
+                          objectFit: "cover",
+                        }}
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
+                          <span>{item.title}</span>
                           <span className="text-primary d-none">$115</span>
                         </h5>
-                        <small className="fst-italic">
+                        <small className="fst-italic d-none">
                           Ipsum ipsum clita erat amet dolor justo diam
                         </small>
                       </div>
@@ -84,7 +93,7 @@ const FoodMenu = () => {
             </div>
             <div id="tab-2" className="tab-pane fade show p-0">
               <div className="row g-4">
-                {LUNCH_MENU.map((item) => (
+                {GENERAL_MENU.map((item) => (
                   <div className="col-lg-6" key={item.image}>
                     <div className="d-flex align-items-center">
                       <img
