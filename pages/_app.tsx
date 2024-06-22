@@ -11,8 +11,6 @@ import "animate.css";
 
 import { Inter } from "next/font/google";
 
-import { FloatingWhatsApp } from "react-floating-whatsapp";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -21,11 +19,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <DefaultLayout>
         <CustomScript />
         <Component {...pageProps} />
-        <FloatingWhatsApp
-          phoneNumber="+233201024839"
-          accountName="Hi-Tabel"
-          avatar="/assets/img/hitabel-logo.png"
-        />
       </DefaultLayout>
     </main>
   );

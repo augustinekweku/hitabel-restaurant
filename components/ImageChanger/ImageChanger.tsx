@@ -23,11 +23,13 @@ const ImageChanger: React.FC<ImageChangerProps> = ({ images, interval }) => {
   }, [images.length, interval]);
 
   return (
-    <div className={""}>
+    <div className={"d-flex align-items-center justify-content-center"}>
       <img
         src={images[currentIndex]}
         alt={`Image ${currentIndex}`}
-        className={`${styles.image} ${fade ? styles.fadeIn : styles.fadeOut}`}
+        className={`hero-image ${styles.image} ${
+          fade ? styles.fadeIn : styles.fadeOut
+        }`}
       />
     </div>
   );

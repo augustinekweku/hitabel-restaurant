@@ -4,12 +4,6 @@
   height: 100%;
 }
 
-.image {
-  width: 600px;
-  height: 500px;
-  object-fit: contain;
-  transition: opacity 1s ease-in-out;
-}
 
 .fadeIn {
   opacity: 1;

@@ -48,12 +48,12 @@ export default function Home() {
           <div className=" position-relative p-0">
             <div className="py-5 bg-dark hero-header mb-5">
               <div className="container my-5 py-5">
-                <div className="row align-items-center g-5 mt-5">
+                <div className="row align-items-center  mt-5">
                   <div className="col-lg-6 text-center text-lg-start">
                     <h1 className="display-3 text-white animated slideInLeft">
                       Enjoy Our
                       <br />
-                      Delicious Meal
+                      Delicious Meals
                     </h1>
                     <p className="text-white fs-3 animated slideInLeft mb-4 pb-2">
                       Customer focused Restaurant, Bar & Pizza designed to
@@ -66,7 +66,7 @@ export default function Home() {
                       Contact Us
                     </a>
                   </div>
-                  <div className="col-lg-6 text-center text-lg-end ">
+                  <div className="col-lg-6 text-center text-lg-end pt-5 pt-lg-0">
                     {/* <img
                       className="img-fluid"
                       src="assets/img/hero-2.png"
