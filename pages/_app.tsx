@@ -7,6 +7,8 @@ import "../public/assets/css/style.css";
 import "../styles/globals.scss";
 import CustomScript from "@/components/CustomScript";
 import DefaultLayout from "@/components/DefaultLayout";
+import "animate.css";
+
 import { Inter } from "next/font/google";
 
 import { FloatingWhatsApp } from "react-floating-whatsapp";

@@ -4,6 +4,16 @@ import Reservation from "@/components/Reservation";
 import Footer from "@/components/Footer";
 import FoodMenu from "@/components/FoodMenu";
 import AboutUsImageGallery from "@/components/AboutUsImageGallery";
+import ImageChanger from "@/components/ImageChanger/ImageChanger";
+
+const images = [
+  "assets/img/hero-2.png",
+  "assets/img/hero-3.png",
+  "assets/img/hero-4.png",
+  "assets/img/hero-5.png",
+  "assets/img/hero-6.png",
+  // Add more image paths here
+];
 
 export default function Home() {
   return (
@@ -56,12 +66,13 @@ export default function Home() {
                       Contact Us
                     </a>
                   </div>
-                  <div className="col-lg-6 text-center text-lg-end overflow-hidden">
-                    <img
+                  <div className="col-lg-6 text-center text-lg-end ">
+                    {/* <img
                       className="img-fluid"
-                      src="assets/img/hero.png"
+                      src="assets/img/hero-2.png"
                       alt=""
-                    />
+                    /> */}
+                    <ImageChanger images={images} interval={5000} />
                   </div>
                 </div>
               </div>
