@@ -26,10 +26,10 @@ const Reservation = () => {
           <div className="col-md-6 bg-dark d-flex align-items-center">
             <div className="p-5 wow fadeInUp" data-wow-delay="0.2s">
               <h5 className="section-title ff-secondary text-start text-primary fw-normal">
-                Reservation
+                Contact Us
               </h5>
-              <h1 className="text-white mb-4">Book A Table Online</h1>
-              <form>
+              <h1 className="text-white mb-4">Reach Out to Us </h1>
+              <form action="https://submit-form.com/HNU4Whylq">
                 <div className="row g-3">
                   <div className="col-md-6">
                     <div className="form-floating">
@@ -37,7 +37,9 @@ const Reservation = () => {
                         type="text"
                         className="form-control"
                         id="name"
+                        name="name"
                         placeholder="Your Name"
+                        required
                       />
                       <label htmlFor="name">Your Name</label>
                     </div>
@@ -45,49 +47,27 @@ const Reservation = () => {
                   <div className="col-md-6">
                     <div className="form-floating">
                       <input
-                        type="email"
                         className="form-control"
+                        type="email"
                         id="email"
+                        name="email"
                         placeholder="Your Email"
+                        required
                       />
                       <label htmlFor="email">Your Email</label>
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="form-floating date" id="date3">
-                      <input
-                        type="datetime-local"
-                        className="form-control"
-                        placeholder="Date & Time"
-                      />
-                      <label htmlFor="datetime">Date & Time</label>
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="form-floating">
-                      <select className="form-select" id="select1">
-                        <option value="1"> 1</option>
-                        <option value="2"> 2</option>
-                        <option value="3"> 3</option>
-                        <option value="4"> 4</option>
-                        <option value="5"> 5</option>
-                        <option value="6"> 6</option>
-                        <option value="7"> 7</option>
-                        <option value="8"> 8</option>
-                        <option value="9"> 9</option>
-                      </select>
-                      <label htmlFor="select1">No Of People</label>
                     </div>
                   </div>
                   <div className="col-12">
                     <div className="form-floating">
                       <textarea
                         className="form-control"
-                        placeholder="Special Request"
+                        placeholder="Message"
                         id="message"
+                        name="message"
                         style={{ height: "100px" }}
+                        required
                       ></textarea>
-                      <label htmlFor="message">Special Request</label>
+                      <label htmlFor="message">Message</label>
                     </div>
                   </div>
                   <div className="col-12">
@@ -95,7 +75,7 @@ const Reservation = () => {
                       className="btn btn-primary w-100 py-3"
                       type="submit"
                     >
-                      Book Now
+                      Send
                     </button>
                   </div>
                 </div>

@@ -53,7 +53,7 @@ export default function Home() {
                       href="#reservation"
                       className="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft"
                     >
-                      Book A Table
+                      Contact Us
                     </a>
                   </div>
                   <div className="col-lg-6 text-center text-lg-end overflow-hidden">

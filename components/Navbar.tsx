@@ -70,7 +70,7 @@ const Navbar = () => {
             href="#reservation"
             className="btn btn-primary py-2 px-4 text-nowrap"
           >
-            Book A Table
+            Contact Us
           </Link>
         </div>
       </nav>
