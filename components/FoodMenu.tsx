@@ -1,9 +1,4 @@
-import {
-  BREAKFAST_MENU,
-  DINNER_MENU,
-  GENERAL_MENU,
-  LUNCH_MENU,
-} from "@/constants";
+import { DINNER_MENU, GENERAL_MENU } from "@/constants";
 import React from "react";
 
 const FoodMenu = () => {

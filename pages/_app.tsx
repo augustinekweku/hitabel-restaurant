@@ -7,12 +7,17 @@ import "../public/assets/css/style.css";
 import "../styles/globals.scss";
 import CustomScript from "@/components/CustomScript";
 import DefaultLayout from "@/components/DefaultLayout";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <DefaultLayout>
-      <CustomScript />
-      <Component {...pageProps} />
-    </DefaultLayout>
+    <main className={inter.className}>
+      <DefaultLayout>
+        <CustomScript />
+        <Component {...pageProps} />
+      </DefaultLayout>
+    </main>
   );
 }

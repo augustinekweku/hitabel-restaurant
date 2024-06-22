@@ -5,8 +5,6 @@ import Footer from "@/components/Footer";
 import FoodMenu from "@/components/FoodMenu";
 import AboutUsImageGallery from "@/components/AboutUsImageGallery";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export default function Home() {
   return (
     <>
@@ -47,7 +45,7 @@ export default function Home() {
                       <br />
                       Delicious Meal
                     </h1>
-                    <p className="text-white animated slideInLeft mb-4 pb-2">
+                    <p className="text-white fs-3 animated slideInLeft mb-4 pb-2">
                       Customer focused Restaurant, Bar & Pizza designed to
                       de-stress Accra and beyond.
                     </p>
@@ -70,6 +68,85 @@ export default function Home() {
             </div>
           </div>
           {/* <!-- Navbar & Hero End --> */}
+
+          {/* <!-- About Start --> */}
+          <section id="about">
+            <div className="container-xxl py-5">
+              <div className="container">
+                <div className="row g-5 align-items-center">
+                  <div className="col-lg-6">
+                    <AboutUsImageGallery />
+                  </div>
+                  <div className="col-lg-6">
+                    <h5 className="section-title ff-secondary text-start text-primary fw-normal">
+                      About Us
+                    </h5>
+                    <h1 className="mb-4">
+                      Welcome to{" "}
+                      <i className="fa fa-utensils text-primary me-2"></i>
+                      Hi-Tabel
+                    </h1>
+                    <p className="mb-4">
+                      Welcome to our customer-focused Restaurant, Bar & Pizza, a
+                      haven designed to de-stress Accra and beyond. Our
+                      establishment is dedicated to providing a relaxing and
+                      enjoyable escape from the hustle and bustle of everyday
+                      life. With a team of master chefs crafting exquisite
+                      dishes, a bar offering a wide selection of refreshing
+                      beverages, and a pizza menu that tantalizes the taste
+                      buds, we cater to every craving.
+                    </p>
+                    <p className="mb-4">
+                      Our inviting ambiance and exceptional service ensure that
+                      every visit is a memorable experience, whether you&apos;re
+                      here for a casual meal, a special celebration, or simply
+                      to unwind with friends. Join us and discover the perfect
+                      place to relax and savor the moment.
+                    </p>
+                    <div className="row g-4 mb-4">
+                      <div className="col-sm-6">
+                        <div className="d-flex align-items-center border-start border-5 border-primary px-3">
+                          <h1
+                            className="flex-shrink-0 display-5 text-primary mb-0"
+                            data-toggle="counter-up"
+                          >
+                            5
+                          </h1>
+                          <div className="ps-4">
+                            <p className="mb-0">Years of</p>
+                            <h6 className="text-uppercase mb-0">Experience</h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-sm-6">
+                        <div className="d-flex align-items-center border-start border-5 border-primary px-3">
+                          <h1
+                            className="flex-shrink-0 display-5 text-primary mb-0"
+                            data-toggle="counter-up"
+                          >
+                            4
+                          </h1>
+                          <div className="ps-4">
+                            <p className="mb-0">Popular</p>
+                            <h6 className="text-uppercase mb-0">
+                              Master Chefs
+                            </h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* <!-- About End --> */}
+
+          {/* <!-- Menu Start --> */}
+          <section id="menu">
+            <FoodMenu />
+          </section>
 
           {/* <!-- Service Start --> */}
           <div className="container-xxl py-5">
@@ -162,87 +239,6 @@ export default function Home() {
           </div>
           {/* <!-- Service End --> */}
 
-          {/* <!-- About Start --> */}
-          <section id="about">
-            <div className="container-xxl py-5">
-              <div className="container">
-                <div className="row g-5 align-items-center">
-                  <div className="col-lg-6">
-                    <AboutUsImageGallery />
-                  </div>
-                  <div className="col-lg-6">
-                    <h5 className="section-title ff-secondary text-start text-primary fw-normal">
-                      About Us
-                    </h5>
-                    <h1 className="mb-4">
-                      Welcome to{" "}
-                      <i className="fa fa-utensils text-primary me-2"></i>
-                      Hi-Tabel
-                    </h1>
-                    <p className="mb-4">
-                      Welcome to our customer-focused Restaurant, Bar & Pizza, a
-                      haven designed to de-stress Accra and beyond. Our
-                      establishment is dedicated to providing a relaxing and
-                      enjoyable escape from the hustle and bustle of everyday
-                      life. With a team of master chefs crafting exquisite
-                      dishes, a bar offering a wide selection of refreshing
-                      beverages, and a pizza menu that tantalizes the taste
-                      buds, we cater to every craving.
-                    </p>
-                    <p className="mb-4">
-                      Our inviting ambiance and exceptional service ensure that
-                      every visit is a memorable experience, whether you&apos;re
-                      here for a casual meal, a special celebration, or simply
-                      to unwind with friends. Join us and discover the perfect
-                      place to relax and savor the moment.
-                    </p>
-                    <div className="row g-4 mb-4">
-                      <div className="col-sm-6">
-                        <div className="d-flex align-items-center border-start border-5 border-primary px-3">
-                          <h1
-                            className="flex-shrink-0 display-5 text-primary mb-0"
-                            data-toggle="counter-up"
-                          >
-                            5
-                          </h1>
-                          <div className="ps-4">
-                            <p className="mb-0">Years of</p>
-                            <h6 className="text-uppercase mb-0">Experience</h6>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-sm-6">
-                        <div className="d-flex align-items-center border-start border-5 border-primary px-3">
-                          <h1
-                            className="flex-shrink-0 display-5 text-primary mb-0"
-                            data-toggle="counter-up"
-                          >
-                            4
-                          </h1>
-                          <div className="ps-4">
-                            <p className="mb-0">Popular</p>
-                            <h6 className="text-uppercase mb-0">
-                              Master Chefs
-                            </h6>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a className="btn btn-primary py-3 px-5 mt-2" href="">
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* <!-- About End --> */}
-
-          {/* <!-- Menu Start --> */}
-          <section id="menu">
-            <FoodMenu />
-          </section>
           {/* <!-- Menu End --> */}
           <section id="reservation">
             <Reservation />

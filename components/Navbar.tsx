@@ -4,7 +4,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <div className="">
-      <nav className=" navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-5  ">
+      <nav className=" navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 pb-5">
         <div className="d-flex justify-content-between w-100 container my-4">
           <Link href="/" className="navbar-brand p-0">
             {/* <h1 className="text-primary m-0">
@@ -14,8 +14,8 @@ const Navbar = () => {
               src="assets/img/hitabel-logo.png"
               style={{
                 width: "150px",
-                height: "100px",
-                objectFit: "cover",
+                height: "150px",
+                objectFit: "contain",
                 overflow: "visible",
               }}
               alt="Logo"
