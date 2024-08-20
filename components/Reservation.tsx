@@ -19,7 +19,6 @@ const Reservation = () => {
 
   const onRecaptureCompleted = (token: string) => {
     setReCapturetoken(token);
-    console.log(token);
   };
 
   let retries = 0;
@@ -30,7 +29,7 @@ const Reservation = () => {
     try {
       //@ts-ignore
       grecaptcha.render("recaptcha-container", {
-        sitekey: "6LeQfCsqAAAAALSfJJQFrJGVVZA6_lRiAWdjqBLb",
+        sitekey: "6LeQfCsqAAAAAIUTc-hT5Y-zNzy6r3-TUQa4ZeA2",
         callback: onRecaptureCompleted,
       });
 
