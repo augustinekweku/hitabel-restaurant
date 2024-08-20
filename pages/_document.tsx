@@ -23,6 +23,11 @@ export default function Document() {
           href="/assets/img/hitabel-logo.png"
           type="image/x-icon"
         />
+        <script
+          src="https://www.google.com/recaptcha/api.js"
+          async
+          defer
+        ></script>
       </Head>
       <body>
         <Main />

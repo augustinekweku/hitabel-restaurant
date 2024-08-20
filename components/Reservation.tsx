@@ -1,6 +1,53 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+type LoginFormState = {
+  phoneNumber: string;
+  message: string;
+  loading: boolean;
+  reCapturetoken: string;
+  isreCaptureMounted: boolean;
+};
 
 const Reservation = () => {
+  const [form, setForm] = useState<LoginFormState>({
+    message: "",
+    phoneNumber: "",
+    reCapturetoken: "",
+    loading: false,
+    isreCaptureMounted: false,
+  });
+  const [reCapturetoken, setReCapturetoken] = useState<string>("");
+
+  const onRecaptureCompleted = (token: string) => {
+    setReCapturetoken(token);
+    console.log(token);
+  };
+
+  let retries = 0;
+
+  const initRecaptcha = () => {
+    retries++;
+    if (form.isreCaptureMounted || retries >= 20) return;
+    try {
+      //@ts-ignore
+      grecaptcha.render("recaptcha-container", {
+        sitekey: "6LeQfCsqAAAAALSfJJQFrJGVVZA6_lRiAWdjqBLb",
+        callback: onRecaptureCompleted,
+      });
+
+      setForm((prev) => ({
+        ...prev,
+        isreCaptureMounted: true,
+      }));
+
+      return;
+    } catch (error) {}
+
+    window.setTimeout(initRecaptcha, 1000);
+  };
+
+  useEffect(() => {
+    initRecaptcha();
+  }, []);
   return (
     <div>
       {" "}
@@ -70,10 +117,15 @@ const Reservation = () => {
                       <label htmlFor="message">Message</label>
                     </div>
                   </div>
+                  <div className="d-flex justify-content-center mb-4">
+                    <div id="recaptcha-container"></div>
+                  </div>
+                  <br />
                   <div className="col-12">
                     <button
                       className="btn btn-primary w-100 py-3"
                       type="submit"
+                      disabled={!reCapturetoken}
                     >
                       Send
                     </button>
